@@ -1,0 +1,53 @@
+﻿<Window x:Class="Pharmacy_Management.Administrator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pharmacy_Management"
+        mc:Ignorable="d"
+        Title="Administrator" Height="550" Width="900" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Width="275" HorizontalAlignment="Left" Background="#FF5E625B" >
+            <Image Height="117" Width="147" RenderTransformOrigin="0.521,0.531" Source="/icons8-administrator-male-skin-type-5-48.png" Stretch="Fill"/>
+            <TextBlock x:Name="textblock1" Text="Administrator" TextWrapping="Wrap" Height="40" FontSize="22" HorizontalAlignment="Center" Margin="0,20,0,0" Width="138"/>
+            <Button x:Name="dashboard_btn"  Content="Dasboard" HorizontalAlignment="Right" Margin="23,30,0,0" FontSize="16" Width="220" Height="39" Foreground="White" Click="dashboard_btn_Click"   >
+                
+                
+
+                <Button.Background>
+                    <ImageBrush ImageSource="/icons8-dashboard-layout-48.png" Stretch="Uniform" AlignmentX="Left" />
+                </Button.Background>
+                
+            </Button>
+
+            <Button x:Name="user_add_btn"  Content="User hinzufügen" HorizontalAlignment="Right" Margin="23,30,0,0" FontSize="16" Width="220" Height="39" Foreground="White" Click="User_add_btn_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/49576_new_add_plus_user_icon.png" Stretch="Uniform" AlignmentX="Left" />
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="useranzeigen_btn"  Content="User anzeigen" HorizontalAlignment="Right" Margin="23,30,0,0" FontSize="16" Width="220" Height="39" Foreground="White" Click="useranzeigen_btn_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/icons8-view-64.png" Stretch="Uniform" AlignmentX="Left" />
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="abmelden_btn"  Content="Abmelden" HorizontalAlignment="Right" Margin="23,30,0,0" FontSize="16" Width="220" Height="39" Click="abmelden_btn_Click" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="/icons8-log-out-32.png" Stretch="Uniform" AlignmentX="Left" />
+                </Button.Background>
+            </Button>
+            <Label x:Name="label11" Content=""/>
+
+        </StackPanel>
+        <Frame x:Name="Main" Content="" Width="625" HorizontalAlignment="Left" Margin="275,0,0,0" Height="550" NavigationUIVisibility="Hidden" Navigated="Main_Navigated">
+            <Frame.Background>
+                <ImageBrush ImageSource="/pharmacy-clipart-images-1.jpg" Stretch="Uniform"/>
+            </Frame.Background>
+        </Frame>
+
+
+
+
+    </Grid>
+</Window>

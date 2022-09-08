@@ -1,0 +1,23 @@
+﻿<Window x:Class="Pharmacy_Management.Mitarbeiter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pharmacy_Management"
+        mc:Ignorable="d"
+        Title="Mitarbeiter" Height="550" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="534" Stroke="Black" VerticalAlignment="Center" Width="215" Fill="#FF9B5656"/>
+        <Rectangle HorizontalAlignment="Left" Height="534" Margin="215,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="685">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/R.jpg" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="medikamente_speichernbtn" Content="Medikamente Speichern" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top" Width="185" Height="39" FontSize="16" Click="medikamente_speichernbtn_Click"/>
+        <Button Content="Medikamente Anzeigen" HorizontalAlignment="Left" Margin="30,168,0,0" VerticalAlignment="Top" Width="185" Height="39" FontSize="16"/>
+        <Button Content="Medikamente Verkaufen" HorizontalAlignment="Left" Margin="30,267,0,0" VerticalAlignment="Top" Width="185" Height="39" FontSize="16"/>
+        <Button x:Name="Abmeldenbtn" Content="Abmelden" HorizontalAlignment="Left" Margin="30,357,0,0" VerticalAlignment="Top" Width="185" Height="39" FontSize="16" Click="Abmeldenbtn_Click"/>
+        <Frame x:Name="main" Content="" Height="534" VerticalAlignment="Center" HorizontalAlignment="Left" Width="685" NavigationUIVisibility="Hidden" Margin="215,0,0,0"/>
+
+    </Grid>
+</Window>
